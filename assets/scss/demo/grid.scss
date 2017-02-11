@@ -1,0 +1,9 @@
+$c-demo: #abc;
+
+[class*="grid-col-"] {
+  &.is-demo {
+    background-color: $c-demo;
+    margin-top: 16px;
+    min-height: 40px;
+  }
+}

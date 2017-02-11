@@ -1,0 +1,71 @@
+@mixin grid-style {
+  @include screen(phone) {
+    width: 100%;
+  }
+
+  display: inline-block;
+  float: left;
+  min-height: 2px;
+}
+
+@function row-width($break, $offset, $gutter) {
+  @return $break - 2 * $offset + $gutter;
+}
+
+@mixin grid-col($i, $gutter: $gutter-1, $gutter-m: $gutter-2) {
+  $shadow-width: percentage($i / 12);
+  $gutter-margin: $gutter / 2;
+  $offset: 13 - $i;
+  @include grid-style;
+  @include screen(mobile) {
+    $margin-g: $gutter-m / 2;
+    margin: 0 $margin-g;
+    width: calc(100% - #{$gutter-m});
+  }
+
+  margin: 0 $gutter-margin;
+  width: calc(#{$shadow-width} - #{$gutter});
+  @for $i from 1 to $offset {
+    &.is-offset-#{$i} {
+      $shadow-width: percentage($i / 12);
+
+      @include screen (desktop) {
+        margin-left: calc(#{$shadow-width} + #{$gutter}/2);
+      }
+    }
+  }
+}
+
+@mixin grid {
+  $sm: $sm-screen;
+  $md: $md-screen;
+  $st: $standard-screen;
+  $wide: $wide-screen;
+  $hd: $hd-screen;
+  $min-row-width: ($min-width - $gutter-2 * 2);
+  @for $i from 1 to 13 {
+    .grid-col-#{$i} {
+      @include grid-col($i, $gutter-1);
+    }
+  }
+
+  .grid-row {
+    @include clearfix;
+    @include screen(wide) {
+      width: row-width($wide, $offset-1, + $gutter-1);
+    }
+
+    @include screen(tablet) {
+      width: row-width($md, $offset-2, $gutter-2);
+    }
+
+    @include screen(phone) {
+      width: calc(100% - #{$offset-2 * 2 - $gutter-2});
+    }
+
+    display: block;
+    margin: 0 auto;
+    min-width: $min-row-width;
+    width: row-width($st, $offset-1, $gutter-1);
+  }
+}
