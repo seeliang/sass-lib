@@ -1,0 +1,53 @@
+[class*="grid-col-"] {
+  &.is-main-1 {
+    background-color: $c-main-1;
+  }
+
+  &.is-main-2 {
+    background-color: $c-main-2;
+  }
+
+  &.is-correct {
+    background-color: $c-correct;
+  }
+
+  &.is-error {
+    background-color: $c-error;
+  }
+
+  &.is-print-0 {
+    background-color: $c-print-1;
+  }
+
+  &.is-print-1 {
+    background-color: $c-print-1;
+  }
+
+  &.is-print-2 {
+    background-color: $c-print-2;
+  }
+
+  &.is-print-3 {
+    background-color: $c-print-3;
+  }
+
+  &.is-print-4 {
+    background-color: $c-print-4;
+  }
+
+  &.is-print-5 {
+    background-color: $c-print-5;
+  }
+
+  &.is-print-6 {
+    background-color: $c-print-6;
+  }
+
+  &.is-print-7 {
+    background-color: $c-print-7;
+  }
+
+  &.is-print-8 {
+    background-color: $c-print-8;
+  }
+}

@@ -6,9 +6,12 @@
 @import 'lib/media-query';
 @import 'lib/grid';
 
+@import 'lib/colors';
+
 // rendering
 @include grid;
 
 
 // demo
 @import 'demo/grid';
+@import 'demo/colors';
