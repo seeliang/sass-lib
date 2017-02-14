@@ -10,9 +10,12 @@
 
 @import 'lib/typography';
 
+@import 'lib/buttons';
+
 // rendering
 @include grid;
 @include typography;
+@include buttons;
 
 // demo
 @import 'demo/grid';
