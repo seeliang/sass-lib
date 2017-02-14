@@ -8,9 +8,11 @@
 
 @import 'lib/colors';
 
+@import 'lib/typography';
+
 // rendering
 @include grid;
-
+@include typography;
 
 // demo
 @import 'demo/grid';
