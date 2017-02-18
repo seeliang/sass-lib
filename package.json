@@ -1,6 +1,6 @@
 {
   "name": "sass-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sass library sample",
   "main": "index.js",
   "repository": "https://github.com/seeliang/sass-lib.git",
