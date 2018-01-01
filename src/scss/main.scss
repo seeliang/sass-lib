@@ -1,16 +1,9 @@
 @import 'vendor/reset';
+@import 'atoms/*';
 
 @import 'lib/vars';
 @import 'lib/helpers';
-
-@import 'lib/media-query';
 @import 'lib/grid';
-
-@import 'lib/colors';
-
-@import 'lib/typography';
-
-@import 'lib/buttons';
 
 // rendering
 @include grid;
