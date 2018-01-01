@@ -6,10 +6,9 @@
   "repository": "https://github.com/seeliang/sass-lib.git",
   "author": "seeliang <me@sihuiliang.com>",
   "license": "MIT",
-  "dependencies": {
-    "sl-gt-sass-autoprefixer": "^1.1.4"
-  },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "node-sass": "^4.7.2",
+    "sl-gt-sass-autoprefixer": "^1.1.4"
   }
 }
