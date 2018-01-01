@@ -3,11 +3,5 @@
 @import 'atoms/*';
 @import 'molecules/*';
 
-// rendering
-@include grid;
-@include typography;
-@include buttons;
-
 // demo
-@import 'demo/grid';
-@import 'demo/colors';
+@import 'demo/*';
