@@ -1,9 +1,9 @@
 @import 'vendor/reset';
 @import 'atoms/*';
+@import 'molecules/*';
 
 @import 'lib/vars';
 @import 'lib/helpers';
-@import 'lib/grid';
 
 // rendering
 @include grid;
