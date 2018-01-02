@@ -13,5 +13,8 @@
     "gulp": "^3.9.1",
     "node-sass": "^4.7.2",
     "sl-gt-sass-autoprefixer": "^1.1.4"
+  },
+  "dependencies": {
+    "reset-css": "^2.2.1"
   }
 }
