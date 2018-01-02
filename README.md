@@ -1,11 +1,15 @@
-#Sass-lib
-this is a sample sass library of style guide base elements
+# Sass-lib
+This is sass library / framework for new project with style guide base elements and samples
 
-##Goal
-the goal of this repo is for create a main brand lib that can be reused across the main websites and child websites, this could be turn into a package (npm), if it is necessary.
+## Features
+* The library / framework is for create a main branding styling that can be reused across the main websites and child websites
 
-##Main files
-https://github.com/seeliang/sass-lib/tree/master/assets/scss/lib
+* based on atomic design
+ 
+* this could be turn into a package (npm), if it is necessary.
 
-##Style guide sample
+## Main files
+https://github.com/seeliang/sass-lib/tree/master/src
+
+## Style guide sample
 https://seeliang.github.io/sass-lib/docs
