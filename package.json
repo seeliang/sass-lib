@@ -6,6 +6,9 @@
   "repository": "https://github.com/seeliang/sass-lib.git",
   "author": "seeliang <me@sihuiliang.com>",
   "license": "MIT",
+  "scripts": {
+    "css": "node_modules/.bin/gulp css"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "node-sass": "^4.7.2",
