@@ -1,6 +1,3 @@
 var gulp = require('gulp'),
-  options = {
-    sassFolder: 'src',
-    cssFolder: 'dist/css'
-  }
+  options = require('./tasks/sass-options.js');
 require('sl-gt-sass-autoprefixer')(gulp, options);
