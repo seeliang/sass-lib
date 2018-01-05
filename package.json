@@ -7,12 +7,17 @@
   "author": "seeliang <me@sihuiliang.com>",
   "license": "MIT",
   "scripts": {
-    "css": "node_modules/.bin/gulp css"
+    "css": "node_modules/.bin/gulp css",
+    "lint-sass": "yarn sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
+    "lint-sync": "yarn gulp synclint-copy --path sl-fe-lint"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "node-sass": "^4.7.2",
-    "sl-gt-sass-autoprefixer": "^1.1.4"
+    "sass-lint": "^1.12.1",
+    "sl-fe-lint": "2",
+    "sl-gt-sass-autoprefixer": "1",
+    "sl-gt-synclint": "1"
   },
   "dependencies": {
     "reset-css": "^2.2.1"
