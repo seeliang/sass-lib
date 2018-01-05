@@ -7,7 +7,9 @@
   "author": "seeliang <me@sihuiliang.com>",
   "license": "MIT",
   "scripts": {
-    "css": "node_modules/.bin/gulp css"
+    "css": "node_modules/.bin/gulp css",
+    "lint-sass": "yarn sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
+    "lint-sync": "yarn gulp synclint-copy --path sl-fe-lint"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
