@@ -1,15 +1,18 @@
 {
   "name": "sass-lib",
-  "version": "1.0.1",
   "description": "sass library sample",
-  "main": "index.js",
-  "repository": "https://github.com/seeliang/sass-lib.git",
   "author": "seeliang <me@sihuiliang.com>",
   "license": "MIT",
+  "repository": "https://github.com/seeliang/sass-lib.git",
+  "version": "1.0.1",
+  "main": "index.js",
   "scripts": {
     "css": "node_modules/.bin/gulp css",
     "lint-sass": "yarn sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "lint-sync": "yarn gulp synclint-copy --path sl-fe-lint"
+  },
+  "dependencies": {
+    "reset-css": "^2.2.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -18,8 +21,5 @@
     "sl-fe-lint": "2",
     "sl-gt-sass-autoprefixer": "1",
     "sl-gt-synclint": "1"
-  },
-  "dependencies": {
-    "reset-css": "^2.2.1"
   }
 }
