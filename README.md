@@ -12,4 +12,4 @@ This is sass library / framework for new project with style guide base elements 
 https://github.com/seeliang/sass-lib/tree/master/src
 
 ## Style guide sample
-https://seeliang.github.io/sass-lib/docs
+https://seeliang.github.io/sass-lib/
