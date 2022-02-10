@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "sass-lint": "^1.12.1",
     "sl-fe-lint": "2",
     "sl-gt-sass-autoprefixer": "1",
